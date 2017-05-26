@@ -1,0 +1,263 @@
+.container {
+    max-width: 800px; }
+.header {
+    text-align: center;
+    padding:0 0 0 0;}
+.value-prop {
+    margin-top: 1rem; }
+.value-props {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+.value-img {
+    display: block;
+    text-align: center;
+    margin: 2.5rem auto 0; }
+.heading-font-size {
+    font-size: 1.2rem;
+    color: #999;
+    letter-spacing: normal; }
+.navbar {
+    display: none; }
+.footer-title {
+    color:#919191;
+    font-size:1.2rem;
+    padding-bottom:0;
+    margin:0;
+
+}
+.footer-listitem {
+    color:#a8a8a8;
+    font-size:1.2rem;  
+    padding-top:5;
+    padding-bottom:0;
+    margin:0;
+
+}
+.footer-listitem-logo {
+    color:#a8a8a8;
+    font-size:1.2rem;  
+    margin:10 10 10 10;
+    text-align: center;
+}
+
+.footer-copyright {
+    color:#808080;
+    font-size:1rem;
+    text-align: left;
+    margin:0;
+}
+.share {
+    padding-top: 50px;
+    text-align: left;
+}
+.share-button {
+    margin: auto;
+}
+
+
+@media (max-width : 799px) {
+    .header {
+        height:75px;}
+    /* Navbar */
+    .navbar + .docs-section {
+        border-top-width: 0; }
+    .navbar,
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 6.5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee; }
+    .navbar-spacer {
+        display: none; }
+    .navbar > .container {
+        width: 100%; }
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0; }
+    .navbar-item {
+        position: relative;
+        float: left;
+        margin-top:3px;
+        margin-bottom: 0; }
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 10px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222; }
+    .navbar-link.active {
+        color: #33C3F0; }
+    .has-docked-nav .navbar {
+        position: fixed;
+        top: 0;
+        left: 0; }
+    .has-docked-nav .navbar-spacer {
+        display: block; }
+    /* Re-overiding the width 100% declaration to match size of % based container. */
+    .has-docked-nav .navbar > .container {
+        width: 100%; }
+    .navlogo {
+        margin-top:3px;
+        margin-right: 3vw;
+        margin-left: 5vw;
+        color:#595959;
+    }
+    .main {
+        height: 40vw;
+    }
+    .maintitle {
+        margin-top:5vw;
+        font-size: 28px;
+        line-height: 32px;;
+    }
+    .maindetails {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer-title {
+        padding-top:10px;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 800px) {
+    .header {
+        height:75px;}
+    /* Navbar */
+    .navbar + .docs-section {
+        border-top-width: 0; }
+    .navbar,
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 6.5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee; }
+    .navbar-spacer {
+        display: none; }
+    .navbar > .container {
+        width: 100%; }
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0; }
+    .navbar-item {
+        position: relative;
+        float: left;
+        margin-top:3px;
+        margin-bottom: 0; }
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 35px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222; }
+    .navbar-link.active {
+        color: #33C3F0; }
+    .has-docked-nav .navbar {
+        position: fixed;
+        top: 0;
+        left: 0; }
+    .has-docked-nav .navbar-spacer {
+        display: block; }
+    /* Re-overiding the width 100% declaration to match size of % based container dsds */
+    .has-docked-nav .navbar > .container {
+        width: 80%; }
+    .navlogo {
+        margin-top:3px;
+        margin-right: 100px;
+        margin-left: 30px;
+    }
+    .main {
+        height: 30vw;
+    }
+    .maintitle {
+        margin-top:5vw;
+        font-size: 28px;
+        line-height: 32px;;
+    }
+    .maindetails {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer-title {
+        padding-top:0;
+    }
+
+}
+
+
+
+/* Navbar d
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar-logo {
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 23px;
+    padding-left: 5px;
+    padding-right: 23px;
+    font-size: 23px;
+    text-align: center;
+}
+.navbar-tag {
+    padding-top: 32px;
+    padding-left: 0px;
+    font-size: 10px;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
+
+/* music
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.music {
+}
+.track-soundcloud {
+    max-height: 196px;
+}
+.track-sourcecode {
+    max-height: 196px;
+}
+.track-sourcecode pre {
+    max-height: 166px;
+    word-wrap: break-word;
+}
+.track-description {
+    text-align: left;
+    font-size: 12px;
+}
+
+
+
+
+
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+    background-color: #535353;
+    color: #919191;
+    padding: 6rem 0 5rem;
+}
+.footer-logo {
+    height:70px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    text-align: center;
+}

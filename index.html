@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Intelligible Feedback</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+        <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/prettify.css">
+        <link rel="stylesheet" href="css/prism.css">
+
+        <!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+        <script src="js/site.js"></script>
+
+
+        <!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" href="images/icons/earlybird-favicon-16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="images/icons/earlybird-favicon-32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="images/icons/earlybird-favicon-64.png" sizes="64x64" type="image/png">
+        <link rel="icon" href="images/icons/earlybird-favicon-128.png" sizes="128x128" type="image/png">
+        <link rel="icon" href="images/icons/earlybird-favicon-256.png" sizes="256x256" type="image/png">
+
+        <!-- Meta info
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- for Google -->
+        <meta name="description" content="music by science" />
+        <meta name="keywords" content="music science" />
+
+        <meta name="author" content="Intelligible Feedback" />
+        <meta name="copyright" content="2015 Intelligible Feedback" />
+        <meta name="application-name" content="Intelligible Feedback" />
+
+        <!-- for Facebook -->          
+        <meta property="og:title" content="Intelligible Feedback" />
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:image" content="http://www.ianbtw.com/live/bellalee/images/logos/bellalee.png" /> --> 
+        <meta property="og:url" content="http://if.mit.edu" />
+        <meta property="og:description" content="music by science" />
+
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Intelligible Feedback" />
+        <meta name="twitter:description" content="music by science" />
+        <!--<meta name="twitter:image" content="http://www.ianbtw.com/live/bellalee/images/logos/bellalee.png" /> --> 
+    </head>
+    <body>
+
+        <!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <div class="navbar-spacer"></div>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="navbar-list">
+                    <li class="navbar-item navbar-logo"><a href="http://ianbtw.com/live/bellalee">Intelligible Feedback</a></li>
+                    <li class="navbar-item navbar-tag">music by science/code/process</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="section music">
+            <div class="container">
+                <div class="row">
+                    <div class="eight columns track-soundcloud">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151946082&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </div>
+                    <div class="four columns track-sourcecode">
+                        <pre><code class="language-matlab">load west0479.mat
+A = west0479;
+S = A * A' + speye(size(A));
+pct = 100 / numel(A);
+
+figure
+spy(S)
+title('A Sparse Symmetric Matrix')
+nz = nnz(S);
+xlabel(sprintf('nonzeros = %d (%.3f%%)',nz,nz*pct));</code></pre>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="twelve columns track-description">
+                        A pseudo-random process, influenced by vectorised lagrangian transforms of seismic signals detected throughout January 2014 at the MIT seismic station situated in the Green building.
+                        <br><br>
+                        by Polyphonie, 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section music">
+            <div class="container">
+                <div class="row">
+                    <div class="eight columns track-soundcloud">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/38294386&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>    
+                    </div>
+                    <div class="four columns track-sourcecode">
+                        <pre><code id="track-2-code" class="language-matlab"><?php 
+$fh = fopen('tracks/soundcloud-waveform.m','r');
+while ($line = fgets($fh)) {
+    echo($line);
+}
+fclose($fh);
+?></code></pre>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="twelve columns track-description">
+                        A representation of the soundcloud logo through image registration of the logo and amplitude modulated white noise<br><br>
+                        by ibutters, 2012
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="two columns"><div class="footer-logo">BL</div></div>
+                    <div class="two columns footer-header">
+                        <div class="row footer-title">Intelligible Feedback</div>
+                        <div class="row footer-listitem">Contact</div>
+                    </div>
+                    <div class="eight columns social-links">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="two columns footer-copyright">2015 Intelligible Feedback<br> All rights reserved.</div>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/prism.js"></script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36584651-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </body>
+</html>
